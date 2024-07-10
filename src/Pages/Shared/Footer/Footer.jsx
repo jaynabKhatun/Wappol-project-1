@@ -57,7 +57,7 @@ const Footer = () => {
               <h1>North Magdaleneview,</h1>
               <h1>UT 97952-2814</h1>
             </div>
-            <div className="divider"></div>
+            <div className="divider w-60"></div>
           </div>
         </div>
 
@@ -65,7 +65,7 @@ const Footer = () => {
           <h1 className="text-xl font-bold">London</h1>
           <h1>Suite 292 903 Stehr Streets, </h1>
           <h1>Langworthtown, SC 94577-9465</h1>
-          <div className="divider"></div>
+          <div className="divider w-60"></div>
         </div>
 
         <div className="">
@@ -73,10 +73,10 @@ const Footer = () => {
           <h1>19837 Gilberto Lodge, </h1>
           <h1>Lake Kendallville, </h1>
           <h1>Colorado - 97392, Bhutan</h1>
-          <div className="divider"></div>
+          <div className="divider w-60"></div>
         </div>
 
-        <div className="flex gap-4">
+        <div className="flex gap-6">
           <FaLinkedin className="text-2xl text-[#5a5252]" />
           <FaTwitter className="text-2xl text-[#444040]" />
         </div>
