@@ -4,7 +4,7 @@ import assets from "../../../../public/banner.png";
 const Banner = () => {
   return (
     <div
-      className="w-full  min-h-screen bg-[#2042B6]  "
+      className=" min-h-screen bg-[#2042B6]  "
       style={{
         backgroundImage: `url(${assets})`,
         backgroundPosition: "center",
@@ -16,8 +16,8 @@ const Banner = () => {
         borderRadius: "20px",
       }}
     >
-      <div className="flex justify-center items-center">
-        <div className=" space-y-9 absolute bottom-10 left-11 font-serif ">
+      <div className="flex justify-center items-center ">
+        <div className=" md:space-y-9 absolute bottom-10 left-11 font-serif ">
           <div >
             <h1 className="text-3xl text-white">60</h1>
             <p className=" text-[#CDCDCD]">Companies</p>
@@ -36,9 +36,8 @@ const Banner = () => {
           </div>
         </div>
 
-        <div className="absolute top-[50%] font-serif">
-          {/* 2nd */}
-          <h1 className="text-7xl text-[#FFF]">The WPPOOL Index</h1>
+        <div className="absolute top-[20%]  md:top-[40%] font-serif p-8">
+          <h1 className="md:text-7xl text-3xl  text-[#FFF]">The WPPOOL Index</h1>
           <p className="text-white mt-4">
             Monitor the performance of emerging, publicly traded, financial
             technology companies

@@ -10,12 +10,12 @@ const Navbar = () => {
       </div>
       <div className="flex flex-1 justify-end px-2">
         <div className="flex items-stretch gap-4">
-          <a className="btn  btn-outline btn-accent    rounded-full">
+          <button className="btn  btn-outline btn-accent  hidden md:block  rounded-full">
             <IoMdShare />
-          </a>
-          <a className="btn  btn-outline btn-accent   rounded-full">
+          </button>
+          <button className="btn  btn-outline btn-accent md:block  hidden rounded-full">
             Download the 2024 Report
-          </a>
+          </button>
 
           <div className="dropdown dropdown-end">
             <div
