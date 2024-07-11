@@ -4,58 +4,58 @@ import { IoMdShare } from "react-icons/io";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-300 fixed z-10 max-w-screen-xl mx-auto rounded-full">
-      <div className="flex-1">
-        <img src={logo} alt="" />
+    <div className="navbar fixed z-10 bg-opacity-30 max-w-screen-xl  shadow-2xl">
+      <div className="flex-1 px-2 lg:flex-none">
+        <img className="w-40 " src={logo} alt="" />
       </div>
-      <div className="flex-none">
-        <ul className="menu menu-horizontal px-1 space-x-6">
-          <div className="flex gap-6 justify-center items-center ">
-            <li>
-              <button className="btn btn-circle">
-                <IoMdShare />
-              </button>
-            </li>
-            <li>
-              <button className="btn-outline text-white">
-                Download the 2024 Report
-              </button>
-            </li>
+      <div className="flex flex-1 justify-end px-2">
+        <div className="flex items-stretch gap-4">
+          <a className="btn  btn-outline btn-accent    rounded-full">
+            <IoMdShare />
+          </a>
+          <a className="btn  btn-outline btn-accent   rounded-full">
+            Download the 2024 Report
+          </a>
+
+          <div className="dropdown dropdown-end">
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn btn-ghost rounded-btn"
+            >
+              <GiHamburgerMenu className="text-2xl" />
+            </div>
+            <ul
+              tabIndex={0}
+              className="menu dropdown-content bg-base-100 rounded-box z-[1] mt-4 w-52 p-2 shadow"
+            >
+              <li>
+                <a>The WPPOOL Index</a>
+              </li>
+              <li>
+                <a>All Companies</a>
+              </li>
+              <li>
+                <a>Potential Future Listings</a>
+              </li>
+              <li>
+                <a>State of USA</a>
+              </li>
+              <li>
+                <a>Stories & Ideas</a>
+              </li>
+              <li>
+                <a>About WPPOOL</a>
+              </li>
+              <li>
+                <a>WPPOOL Portfolio Companies</a>
+              </li>
+              <li>
+                <a className="text-[#2042B6] font-bold ">Visit WPPOOL</a>
+              </li>
+            </ul>
           </div>
-          <li>
-            <details>
-              <summary>
-                <GiHamburgerMenu className="text-2xl" />
-              </summary>
-              <ul className="bg-base-100 rounded-t-none w-60 ">
-                <li>
-                  <a>The WPPOOL Index</a>
-                </li>
-                <li>
-                  <a>All Companies</a>
-                </li>
-                <li>
-                  <a>Potential Future Listings</a>
-                </li>
-                <li>
-                  <a>State of USA</a>
-                </li>
-                <li>
-                  <a>Stories & Ideas</a>
-                </li>
-                <li>
-                  <a>About WPPOOL</a>
-                </li>
-                <li>
-                  <a>WPPOOL Portfolio Companies</a>
-                </li>
-                <li>
-                  <a className="text-[#2042B6] font-bold ">Visit WPPOOL</a>
-                </li>
-              </ul>
-            </details>
-          </li>
-        </ul>
+        </div>
       </div>
     </div>
   );
