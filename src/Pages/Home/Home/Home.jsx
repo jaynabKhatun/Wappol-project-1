@@ -4,6 +4,7 @@ import Banner from "../Banner/Banner";
 import PotentialFeature from "../PotenstialFeature/PotentialFeature";
 import State from "../State/State";
 
+
 const Home = () => {
   return (
     <div >
@@ -13,6 +14,7 @@ const Home = () => {
       <Button></Button>
       <PotentialFeature></PotentialFeature>
       <State></State>
+      
       </div>
     </div>
   );

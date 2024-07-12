@@ -45,7 +45,7 @@ const Banner = () => {
         </div>
         {/* 3nd */}
         <div className="absolute bottom-10  right-10  ">
-          <button className="btn shadow-2xl btn-circle">
+          <button className="btn shadow-2xl btn-circle shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
             <FaArrowDown/>
           </button>
         </div>

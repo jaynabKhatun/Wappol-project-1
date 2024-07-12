@@ -1,5 +1,6 @@
 import { FaCaretDown } from "react-icons/fa";
 import Slider from "../Slider/Slider";
+import Button2 from "../../../Components/Button2";
 
 const State = () => {
   return (
@@ -33,6 +34,9 @@ const State = () => {
       </div>
       <div>
         <Slider></Slider>
+      </div>
+      <div className="-mt-8">
+        <Button2></Button2>
       </div>
     </div>
   );
