@@ -2,7 +2,7 @@ import { FaSearch } from "react-icons/fa";
 
 const AllCompanies = () => {
   return (
-    <div className="h-[600px] bg-[#FFF] rounded-2xl border mt-14  p-8 ">
+    <div className="md:h-[600px] bg-[#FFF] rounded-2xl border mt-14  p-8 ">
       <div className="flex justify-between ">
         <div>
           <h1 className="md:text-5xl text-3xl font-serif">All Companies</h1>

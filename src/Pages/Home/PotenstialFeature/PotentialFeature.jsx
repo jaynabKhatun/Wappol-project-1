@@ -10,7 +10,7 @@ import logo9 from "../../../assets/feature logo/9.svg";
 import logo10 from "../../../assets/feature logo/10.svg";
 const PotentialFeature = () => {
   return (
-    <div className="mt-36 p-4 ">
+    <div className="md:mt-36 mt-20 p-4 ">
       <div className="mb-10 space-y-6">
         <h1 className="text-4xl text-black">Potential Future Listings</h1>
         <p className="w-[800px]">
