@@ -44,7 +44,7 @@ const Banner = () => {
           </p>
         </div>
         {/* 3nd */}
-        <div className="absolute bottom-10  right-10 ">
+        <div className="absolute bottom-10  right-10  ">
           <button className="btn shadow-2xl btn-circle">
             <FaArrowDown/>
           </button>
