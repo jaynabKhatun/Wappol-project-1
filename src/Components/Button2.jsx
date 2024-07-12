@@ -3,8 +3,8 @@ import { IoMdArrowDropdown } from "react-icons/io";
 
 const Button2 = () => {
   return (
-    <div className="grid grid-cols-2 gap-8 -mt-10">
-      <div className="flex gap-6 items-center">
+    <div className="grid md:grid-cols-2 gap-8 md:-mt-10">
+      <div className="flex md:gap-6 gap-4 items-center">
         <button className="btn btn-circle bg-[#FFF] shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
           <FaArrowLeft />
         </button>
