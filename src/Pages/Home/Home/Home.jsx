@@ -3,6 +3,7 @@ import AllCompanies from "../AllCompanies/AllCompanies";
 import Banner from "../Banner/Banner";
 import PotentialFeature from "../PotenstialFeature/PotentialFeature";
 import State from "../State/State";
+import Stories from "../Stories/Stories";
 
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
       <Button></Button>
       <PotentialFeature></PotentialFeature>
       <State></State>
+      <Stories></Stories>
       
       </div>
     </div>

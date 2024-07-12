@@ -12,7 +12,7 @@ const PotentialFeature = () => {
   return (
     <div className="md:mt-36 mt-20 p-4 ">
       <div className="mb-10 space-y-6">
-        <h1 className="text-4xl text-black">Potential Future Listings</h1>
+        <h1 className="text-4xl text-black font-serif">Potential Future Listings</h1>
         <p className="w-[800px]">
           Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
           vulputate libero et velit interdum, ac aliquet odio mattis. Class

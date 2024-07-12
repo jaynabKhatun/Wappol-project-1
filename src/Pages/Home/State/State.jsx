@@ -6,7 +6,7 @@ const State = () => {
   return (
     <div className="md:mt-36 mt-20 mb-20 ">
       <div>
-        <h1 className="text-2xl">State of USA</h1>
+        <h1 className="text-4xl font-serif">State of USA</h1>
         <div className="dropdown mt-4 z-10">
           <div
             tabIndex={0}
