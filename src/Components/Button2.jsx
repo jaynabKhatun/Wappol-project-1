@@ -1,4 +1,3 @@
-import React from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { IoMdArrowDropdown } from "react-icons/io";
 
@@ -19,7 +18,11 @@ const Button2 = () => {
         <p>of 37</p>
       </div>
 
-      <div className="border border-red-500">2</div>
+      <div className="flex justify-evenly">
+        <button className="px-1 md:px-3  py-1 md:py-2 rounded-full bg-[#2042B6] text-white shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] text-xs">
+        Download the 2023 Report
+        </button>
+      </div>
     </div>
   );
 };

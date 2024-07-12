@@ -35,7 +35,7 @@ const State = () => {
       <div>
         <Slider></Slider>
       </div>
-      <div className="-mt-8">
+      <div >
         <Button2></Button2>
       </div>
     </div>
