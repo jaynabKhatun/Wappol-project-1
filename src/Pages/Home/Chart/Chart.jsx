@@ -1,37 +1,45 @@
-
-import logo from '../../../../public/wppl logo.svg'
+import { GiHamburgerMenu } from "react-icons/gi";
+import logo from "../../../../public/wppl logo.svg";
 import {
-  LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
-} from 'recharts';
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
+import { IoMdShare } from "react-icons/io";
 
 const chartData = [
-  { name: 'Feb', WPPOOL: 10, Google: 20, Microsoft: 15, Twitter: 5 },
-  { name: 'Mar', WPPOOL: 30, Google: 35, Microsoft: 40, Twitter: 25 },
-  { name: 'Apr', WPPOOL: 50, Google: 45, Microsoft: 55, Twitter: 40 },
-  { name: 'May', WPPOOL: 20, Google: 30, Microsoft: 25, Twitter: 15 },
-  { name: 'Jun', WPPOOL: 60, Google: 55, Microsoft: 50, Twitter: 45 },
-  { name: 'Jul', WPPOOL: 80, Google: 65, Microsoft: 70, Twitter: 60 }
+  { name: "Feb", WPPOOL: 10, Google: 20, Microsoft: 15, Twitter: 5 },
+  { name: "Mar", WPPOOL: 30, Google: 35, Microsoft: 40, Twitter: 25 },
+  { name: "Apr", WPPOOL: 50, Google: 45, Microsoft: 55, Twitter: 40 },
+  { name: "May", WPPOOL: 20, Google: 30, Microsoft: 25, Twitter: 15 },
+  { name: "Jun", WPPOOL: 60, Google: 55, Microsoft: 50, Twitter: 45 },
+  { name: "Jul", WPPOOL: 80, Google: 65, Microsoft: 70, Twitter: 60 },
 ];
 
 const indexTabs = [
   { title: "The Index Tab Two" },
   { title: "The Index Tab Three" },
   { title: "The Index Tab Four" },
-  { title: "The Index Tab Five" }
+  { title: "The Index Tab Five" },
 ];
 
 const statCards = [
   { percentage: "+66.2%", label: "WPPOOL Index", color: "bg-red-400" },
   { percentage: "+26.6%", label: "Google Index", color: "bg-indigo-500" },
   { percentage: "+34.1%", label: "Microsoft", color: "bg-lime-300" },
-  { percentage: "+17%", label: "Twitter Index", color: "bg-purple-800" }
+  { percentage: "+17%", label: "Twitter Index", color: "bg-purple-800" },
 ];
 
 const chartLegends = [
   { color: "bg-red-400", label: "WPPOOL" },
   { color: "bg-indigo-500", label: "Google" },
   { color: "bg-lime-300", label: "Microsoft" },
-  { color: "bg-purple-800", label: "Twitter" }
+  { color: "bg-purple-800", label: "Twitter" },
 ];
 
 const StatCard = ({ percentage, label, color }) => (
@@ -50,9 +58,62 @@ const ChartLegend = ({ color, label }) => (
 
 const Chart = () => {
   return (
-    <div className="flex flex-col px-6 py-5 bg-white max-md:pl-5">
-      <header className="text-2xl font-bold">
-        
+    <div className="flex flex-col  px-6 py-5 bg-white max-md:pl-5">
+      <header className="text-2xl font-bold mt-20">
+        <div className="navbar  bg-[#F3F3F3] max-w-screen-xl  shadow-2xl">
+          <div className="flex-1 px-2 lg:flex-none">
+            <img className="w-40 " src={logo} alt="" />
+          </div>
+          <div className="flex flex-1 justify-end px-2">
+            <div className="flex items-stretch gap-4">
+              <button className="btn  btn-outline btn-accent  hidden md:block  rounded-full">
+                <IoMdShare />
+              </button>
+              <button className="btn  btn-outline btn-accent md:block  hidden rounded-full">
+                Download the 2024 Report
+              </button>
+
+              <div className="dropdown dropdown-end">
+                <div
+                  tabIndex={0}
+                  role="button"
+                  className="btn btn-ghost rounded-btn"
+                >
+                  <GiHamburgerMenu className="text-2xl" />
+                </div>
+                <ul
+                  tabIndex={0}
+                  className="menu dropdown-content bg-base-100 rounded-box z-[1] mt-4 w-52 p-2 shadow"
+                >
+                  <li>
+                    <a>The WPPOOL Index</a>
+                  </li>
+                  <li>
+                    <a>All Companies</a>
+                  </li>
+                  <li>
+                    <a>Potential Future Listings</a>
+                  </li>
+                  <li>
+                    <a>State of USA</a>
+                  </li>
+                  <li>
+                    <a>Stories & Ideas</a>
+                  </li>
+                  <li>
+                    <a>About WPPOOL</a>
+                  </li>
+                  <li>
+                    <a>WPPOOL Portfolio Companies</a>
+                  </li>
+                  <li>
+                    <a className="text-[#2042B6] font-bold ">Visit WPPOOL</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </header>
       <div className="mt-5 max-md:max-w-full">
         <div className="flex gap-5 max-md:flex-col max-md:gap-0">
@@ -63,7 +124,9 @@ const Chart = () => {
                 <div className="shrink-0 my-auto w-1 h-px bg-white" />
               </div>
               {indexTabs.map((tab, index) => (
-                <div key={index} className="px-4 py-2 cursor-pointer">{tab.title}</div>
+                <div key={index} className="px-4 py-2 cursor-pointer">
+                  {tab.title}
+                </div>
               ))}
             </nav>
           </aside>
@@ -135,16 +198,32 @@ const Chart = () => {
                 </div>
                 <div className="grow">
                   <ResponsiveContainer width="100%" height={400}>
-                    <LineChart data={chartData} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+                    <LineChart
+                      data={chartData}
+                      margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+                    >
                       <CartesianGrid strokeDasharray="3 3" />
                       <XAxis dataKey="name" />
                       <YAxis />
                       <Tooltip />
                       <Legend />
-                      <Line type="monotone" dataKey="WPPOOL" stroke="#f87171" activeDot={{ r: 8 }} />
+                      <Line
+                        type="monotone"
+                        dataKey="WPPOOL"
+                        stroke="#f87171"
+                        activeDot={{ r: 8 }}
+                      />
                       <Line type="monotone" dataKey="Google" stroke="#6366f1" />
-                      <Line type="monotone" dataKey="Microsoft" stroke="#bef264" />
-                      <Line type="monotone" dataKey="Twitter" stroke="#6b21a8" />
+                      <Line
+                        type="monotone"
+                        dataKey="Microsoft"
+                        stroke="#bef264"
+                      />
+                      <Line
+                        type="monotone"
+                        dataKey="Twitter"
+                        stroke="#6b21a8"
+                      />
                     </LineChart>
                   </ResponsiveContainer>
                 </div>
@@ -177,12 +256,6 @@ const Chart = () => {
   );
 };
 
-Chart.propTypes={
-    
-   
-}
-
-
-
+Chart.propTypes = {};
 
 export default Chart;

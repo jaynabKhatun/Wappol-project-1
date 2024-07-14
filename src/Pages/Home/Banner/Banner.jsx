@@ -16,7 +16,7 @@ const Banner = () => {
         borderRadius: "20px",
       }}
     >
-      <div className="flex justify-center items-center ">
+      <div className="flex justify-center items-center  ">
         <div className=" md:space-y-9 absolute bottom-10 left-11 font-serif ">
           <div >
             <h1 className="text-3xl text-white">60</h1>
