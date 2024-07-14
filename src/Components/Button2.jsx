@@ -4,18 +4,18 @@ import { IoMdArrowDropdown } from "react-icons/io";
 const Button2 = () => {
   return (
     <div className="grid md:grid-cols-2 gap-8 md:-mt-10">
-      <div className="flex md:gap-6 gap-4 items-center">
-        <button className="btn btn-circle bg-[#FFF] shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
+      <div className="flex gap-4 md:gap-6 items-center justify-center md:justify-start">
+        <button className="btn btn-circle bg-[#FFF] shadow-md">
           <FaArrowLeft />
         </button>
-        <button className="btn btn-circle shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] bg-[#FFF]">
+        <button className="btn btn-circle bg-[#FFF] shadow-md">
           <FaArrowRight />
         </button>
-        <p>pages</p>
-        <button className="btn bg-[#FFF] text-xl shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] ">
-          1 & 2 <IoMdArrowDropdown />
+        <p className="text-sm md:text-base">pages</p>
+        <button className="btn bg-[#FFF] text-xl shadow-md flex items-center space-x-1">
+          <span>1 & 2</span> <IoMdArrowDropdown />
         </button>
-        <p>of 37</p>
+        <p className="text-sm md:text-base">of 37</p>
       </div>
 
       <div className="flex justify-evenly">
@@ -24,6 +24,8 @@ const Button2 = () => {
         </button>
       </div>
     </div>
+
+   
   );
 };
 

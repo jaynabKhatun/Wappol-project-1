@@ -2,24 +2,22 @@ import { FaSearch } from "react-icons/fa";
 
 const AllCompanies = () => {
   return (
-    <div className="md:h-[600px] bg-[#FFF] rounded-2xl border mt-14  p-8 ">
-      <div className="flex justify-between ">
-        <div>
-          <h1 className="md:text-5xl text-3xl font-serif">All Companies</h1>
-        </div>
-        <div className="relative">
+    <div className="md:h-[600px] bg-white rounded-2xl border mt-14 p-4 md:p-8">
+      <div className="flex flex-col md:flex-row justify-between items-center">
+        <h1 className="text-3xl md:text-5xl font-serif mb-4 md:mb-0">All Companies</h1>
+        <div className="relative w-full md:w-auto">
           <input
             type="text"
-            className=" md:px-32 px-20  py-4 border rounded-lg focus:outline-none focus:border-blue-500 w-full"
+            className="w-full md:w-96 pl-10 pr-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
             placeholder="Search Companies"
           />
-          <FaSearch className=" absolute top-5 left-4 text-black text-xl" />
+          <FaSearch className="absolute top-1/2 left-3 transform -translate-y-1/2 text-black text-xl" />
         </div>
       </div>
       <div className="overflow-x-auto mt-10">
         <table className="table-auto w-full border-collapse">
-          <thead >
-            <tr >
+          <thead>
+            <tr className="bg-gray-200">
               <th className="px-4 py-2">Company</th>
               <th className="px-4 py-2">
                 <select className="border-none bg-transparent focus:ring-0">
@@ -37,7 +35,6 @@ const AllCompanies = () => {
               <th className="px-4 py-2">YTD Performance</th>
             </tr>
           </thead>
-
           <tbody>
             {[
               {
@@ -151,7 +148,7 @@ const AllCompanies = () => {
                 YTD: "34.7%",
               },
             ].map((row, index) => (
-              <tr key={row.id} className={ index % 2 === 0 ? "bg-gray-100 " : ""}>
+              <tr key={index} className={index % 2 === 0 ? "bg-gray-100" : ""}>
                 <td className="px-4 py-2">{row.Company}</td>
                 <td className="px-4 py-2">{row.Ticker}</td>
                 <td className="px-4 py-2">{row.Vertical}</td>

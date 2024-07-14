@@ -1,4 +1,5 @@
-import propTypes from "prop-types"
+
+import logo from '../../../../public/wppl logo.svg'
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
@@ -50,13 +51,15 @@ const ChartLegend = ({ color, label }) => (
 const Chart = () => {
   return (
     <div className="flex flex-col px-6 py-5 bg-white max-md:pl-5">
-      <header className="text-2xl font-bold">Header</header>
+      <header className="text-2xl font-bold">
+        
+      </header>
       <div className="mt-5 max-md:max-w-full">
         <div className="flex gap-5 max-md:flex-col max-md:gap-0">
           <aside className="flex flex-col w-[19%] max-md:ml-0 max-md:w-full">
             <nav className="flex flex-col grow px-2 pt-2 pb-20 mx-auto w-full text-base rounded-2xl bg-slate-100 text-slate-500 max-md:mt-6">
               <div className="flex gap-5 justify-between px-4 py-3.5 text-white bg-blue-800 rounded-md shadow-xl">
-                <div>The Index</div>
+                <img src={logo} alt="" />
                 <div className="shrink-0 my-auto w-1 h-px bg-white" />
               </div>
               {indexTabs.map((tab, index) => (
