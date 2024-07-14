@@ -1,4 +1,4 @@
-import React from 'react';
+import propTypes from "prop-types"
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
@@ -173,6 +173,13 @@ const Chart = () => {
     </div>
   );
 };
+
+Chart.propTypes={
+    
+   
+}
+
+
 
 
 export default Chart;

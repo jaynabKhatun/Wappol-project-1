@@ -4,7 +4,7 @@ import assets from "../../../../public/banner.png";
 const Banner = () => {
   return (
     <div
-      className=" min-h-screen bg-[#2042B6]  "
+      className=" h-[650px] bg-[#2042B6]  "
       style={{
         backgroundImage: `url(${assets})`,
         backgroundPosition: "center",
